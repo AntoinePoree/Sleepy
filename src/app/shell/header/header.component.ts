@@ -3,6 +3,11 @@ import { Router } from '@angular/router';
 
 import { AuthenticationService, CredentialsService, I18nService } from '@app/core';
 
+interface ILanguage {
+  id: string;
+  asset: string;
+  display: string;
+}
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,7 +15,18 @@ import { AuthenticationService, CredentialsService, I18nService } from '@app/cor
 })
 export class HeaderComponent implements OnInit {
   menuHidden = true;
-
+  public arrLanguages: Array<ILanguage> = [
+    {
+      id: 'fr-FR',
+      asset: 'assets/language/drapeau-france.png',
+      display: 'Français'
+    },
+    {
+      id: 'en-US',
+      asset: 'assets/language/drapeau-anglais.png',
+      display: 'Anglais'
+    }
+  ];
   constructor(
     private router: Router,
     private authenticationService: AuthenticationService,
@@ -26,10 +42,6 @@ export class HeaderComponent implements OnInit {
 
   setLanguage(language: string) {
     this.i18nService.language = language;
-  }
-
-  logout() {
-    this.authenticationService.logout().subscribe(() => this.router.navigate(['/login'], { replaceUrl: true }));
   }
 
   get currentLanguage(): string {

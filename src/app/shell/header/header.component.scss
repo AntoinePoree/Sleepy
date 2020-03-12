@@ -7,3 +7,11 @@
 .nav-link.dropdown-toggle {
   cursor: pointer;
 }
+
+.logo {
+  height: 2rem;
+}
+.selectedLogo {
+  border-radius: 50%;
+  border: 2px solid $white;
+}
