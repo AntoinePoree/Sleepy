@@ -1,0 +1,21 @@
+<section class="container">
+  <h2 translate>titleGame</h2>
+  <p translate>desGame</p>
+  <ng-container *ngIf="games && games.length; then hasData; else noData"></ng-container>
+
+  <ng-template #hasData>
+    <div class="container">
+      <div class="row">
+        <div *ngFor="let item of games" class="col-4">
+          <app-card-game [data]="item"></app-card-game>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #noData>
+    <div class="alert alert-primary" role="alert">
+      <p class="text-muted">Informations non disponible</p>
+    </div>
+  </ng-template>
+</section>

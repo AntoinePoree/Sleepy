@@ -1,0 +1,12 @@
+@import "src/theme/theme-variables";
+
+i {
+  color: $yellow;
+}
+
+.max {
+  min-width: 100%;
+  min-height: 13rem;
+  max-width: 100%;
+  max-height: 13rem;
+}

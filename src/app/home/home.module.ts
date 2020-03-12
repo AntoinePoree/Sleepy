@@ -8,9 +8,10 @@ import { SharedModule } from '@app/shared';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
+import { GameListComponent } from './game-list/game-list.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, Angulartics2Module, HomeRoutingModule],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, GameListComponent]
 })
 export class HomeModule {}

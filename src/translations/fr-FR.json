@@ -12,5 +12,9 @@
   "Username is required": "Identifiant requis",
   "Username or password incorrect.": "Identifiant ou mot de passe incorrect.",
   "Remember me": "Rester connecté",
-  "Version": "Version"
+  "Version": "Version",
+  "Games": "Jeux",
+  "titleGame": "Jeux dites vous ?",
+  "desGame": "Ceux qui m'ont marqué",
+  "Anecdote": "Remarque personel:"
 }

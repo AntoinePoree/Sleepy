@@ -28,7 +28,8 @@
               "src/robots.txt",
               "src/manifest.json",
               "src/assets",
-              "src/assets/language"
+              "src/assets/language",
+              "src/assets/games"
             ],
             "styles": ["src/main.scss"],
             "scripts": []

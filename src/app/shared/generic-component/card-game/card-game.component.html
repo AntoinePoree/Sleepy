@@ -1,0 +1,15 @@
+<div class="card" *ngIf="data">
+  <img class="card-img-top max" *ngIf="data.asset" [src]="data.asset" alt="" />
+  <div class="card-body">
+    <h5 class="card-title" *ngIf="data.name">{{ data.name }}</h5>
+    <p class="card-text" *ngIf="data.description">
+      <span translate>Anecdote</span>
+      {{ data.description }}
+    </p>
+  </div>
+  <div class="card-footer">
+    <span *ngFor="let note of notes" class="m-1">
+      <i [ngClass]="note <= data.rate ? 'fas fa-star' : 'far fa-star'"></i>
+    </span>
+  </div>
+</div>
