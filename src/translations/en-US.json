@@ -1,5 +1,6 @@
 {
   "APP_NAME": "Sleepy",
+  "NAME": "Antonio",
   "About": "About",
   "Hello world !": "Hello world !",
   "Home": "Home",
@@ -14,7 +15,13 @@
   "Remember me": "Remember me",
   "Version": "Version",
   "Games": "Games",
-  "titleGame": "U say Games ?",
-  "desGame": "Those who marked me",
-  "Anecdote": "Personal review:"
+  "titleGame": "Three games that I love",
+  "desGame": "That's me again too 🙃",
+  "Anecdote": "Personal review:",
+  "HK": "Hollow knight ENG",
+  "HZD": "Hollow knight ENG",
+  "MH": "Hollow knight ENG",
+  "Inspirateur": "Inspirator",
+  "Curieux": "Curious",
+  "Positivité": "Positivity"
 }

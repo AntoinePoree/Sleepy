@@ -1,3 +1,65 @@
+.accueil {
+  /* The image used */
+  background-image: url("src/assets/acc.jpg");
+  display: block;
+
+  /* Set a specific height */
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accueil::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: lightcoral;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Bungee, cursive;
+}
+
+.txttimer {
+  z-index: 10;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.demo {
+  animation: Test 1.5s infinite;
+}
+
+@keyframes Test {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .logo {
   width: 100px;
 }
@@ -6,4 +68,12 @@ q {
   font-style: italic;
   font-size: 1.2rem;
   quotes: "« " " »";
+}
+
+.load {
+  transform: translate(-50%, -50%);
+
+  /* change these sizes to fit into your project */
+  width: 100px;
+  height: 100px;
 }

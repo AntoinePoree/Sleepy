@@ -18,7 +18,7 @@ export class GamesService {
       id: 1,
       name: 'Hollow knight',
       asset: 'assets/games/hollow.jpg',
-      description: 'description',
+      description: 'HK',
       rate: 5,
       releaseDate: ''
     },
@@ -26,7 +26,15 @@ export class GamesService {
       id: 2,
       name: 'Horizon Zero Dawn',
       asset: 'assets/games/horizon-Zero-dawn.jpg',
-      description: 'description',
+      description: 'HZD',
+      rate: 10,
+      releaseDate: ''
+    },
+    {
+      id: 3,
+      name: 'Monster Hunter',
+      asset: 'assets/games/monster-hunter.jpg',
+      description: 'MH',
       rate: 10,
       releaseDate: ''
     }

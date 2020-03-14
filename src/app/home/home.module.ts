@@ -9,9 +9,10 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
 import { GameListComponent } from './game-list/game-list.component';
+import { SomeInfoComponent } from './some-info/some-info.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, Angulartics2Module, HomeRoutingModule],
-  declarations: [HomeComponent, GameListComponent]
+  declarations: [HomeComponent, GameListComponent, SomeInfoComponent]
 })
 export class HomeModule {}

@@ -1,7 +1,7 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-0">
     <a class="navbar-brand ml-3" routerLink="/home" translate>
-      <i class="fas fa-home"></i>
+      <!-- <i class="fas fa-home"></i> -->
       APP_NAME</a
     >
     <button
@@ -15,12 +15,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
-      <div class="navbar-nav ml-3">
+      <!-- <div class="navbar-nav ml-3">
         <a class="nav-item nav-link text-uppercase" routerLink="/about" routerLinkActive="active">
           <i class="fas fa-question-circle"></i>
           <span translate> About</span>
         </a>
-      </div>
+      </div> -->
       <div class="navbar-nav ml-auto">
         <span *ngFor="let language of arrLanguages">
           <img

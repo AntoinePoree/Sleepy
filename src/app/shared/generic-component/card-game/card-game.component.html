@@ -1,10 +1,10 @@
-<div class="card" *ngIf="data">
+<div class="card" *ngIf="data" [ngStyle]="{ 'box-shadow': '0 0 60px -20px ' + color ? color : 'grey' }">
   <img class="card-img-top max" *ngIf="data.asset" [src]="data.asset" alt="" />
   <div class="card-body">
     <h5 class="card-title" *ngIf="data.name">{{ data.name }}</h5>
     <p class="card-text" *ngIf="data.description">
       <span translate>Anecdote</span>
-      {{ data.description }}
+      <span translate>{{ data.description }}</span>
     </p>
   </div>
   <div class="card-footer">
