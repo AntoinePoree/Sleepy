@@ -1,5 +1,5 @@
 <section class="container">
-  <h1 class="mb-3" translate="desGame">desGame</h1>
+  <!-- <h1 class="mb-3" translate="desGame">desGame</h1> -->
 
   <h2 class="mb-4" translate="titleGame">titleGame <i class="fas fa-heart heart"></i></h2>
   <ng-container *ngIf="games && games.length; then hasData; else noData"></ng-container>
@@ -7,8 +7,8 @@
   <ng-template #hasData>
     <div class="container">
       <div class="row">
-        <div *ngFor="let item of games; index as i" [ngClass]="[i === 1 ? 'mt-5' : '', 'col-xl-4 col-md-12 mb-1']">
-          <app-card-game [data]="item"></app-card-game>
+        <div *ngFor="let item of games; index as i" class="mb-5">
+          <app-card-game [data]="item" [flip]="true"></app-card-game>
         </div>
       </div>
     </div>
