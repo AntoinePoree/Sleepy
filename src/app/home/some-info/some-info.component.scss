@@ -3,21 +3,7 @@
 section {
   background-color: $gray-100;
   width: 100%;
-  height: 70vh;
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  section {
-    height: 70vh;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  section {
-    height: 50vh;
-  }
+  height: 100%;
 }
 
 h1 {
@@ -27,6 +13,6 @@ h1 {
   box-shadow: 0 -14px 20px 2px grey;
 }
 
-.text {
-  text-align: center;
+.container {
+  flex-direction: column;
 }

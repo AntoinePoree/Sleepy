@@ -1,7 +1,7 @@
 <section class="flip-horizontal" *ngIf="data">
   <h1>{{ data.name }}</h1>
   <div class="content m-3">
-    <p [translate]="data.description">{{ data.description }}</p>
+    <p translate>{{ data.description }}</p>
   </div>
   <div class="img"><img [src]="data.asset" /></div>
 </section>

@@ -1,0 +1,27 @@
+<section class="timeline">
+  <ul *ngIf="data && data.length">
+    <li *ngFor="let item of data">
+      <div>
+        <time *ngIf="item.year">
+          <span *ngIf="item.year">&nbsp;</span>
+          <span *ngIf="item.month" translate>{{ item.month }}</span>
+          <span *ngIf="item.month">&nbsp;</span>
+          {{ item.year }}
+          <span *ngIf="item.duration">&nbsp;- &nbsp;</span>
+          <span *ngIf="item.duration"
+            >{{ item.duration }} <span *ngIf="item.duration" translate>{{ item.durationFormat }}</span></span
+          >
+          <span *ngIf="item.year">&nbsp;</span>
+        </time>
+        <div class="discovery" *ngIf="item.event1">
+          <h1 translate>{{ item.event1.title }}</h1>
+          <p translate>{{ item.event1.message }}</p>
+        </div>
+        <div class="scientist" *ngIf="item.event2">
+          <h1 translate>{{ item.event2.title }}</h1>
+          <span translate>{{ item.event2.message }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
