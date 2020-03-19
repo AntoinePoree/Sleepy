@@ -14,11 +14,27 @@
           <span *ngIf="item.year">&nbsp;</span>
         </time>
         <div class="discovery" *ngIf="item.event1">
-          <h1 translate>{{ item.event1.title }}</h1>
+          <ng-container *ngIf="item.event1.link; then link; else noLink"></ng-container>
+          <ng-template #link>
+            <a [href]="item.event1.link" target="_blank">
+              <h1 translate>{{ item.event1.title }}</h1>
+            </a>
+          </ng-template>
+          <ng-template #noLink>
+            <h1 #noLink translate>{{ item.event1.title }}</h1>
+          </ng-template>
           <p translate>{{ item.event1.message }}</p>
         </div>
         <div class="scientist" *ngIf="item.event2">
-          <h1 translate>{{ item.event2.title }}</h1>
+          <ng-container *ngIf="item.event1.link; then link2; else noLink2"></ng-container>
+          <ng-template #link2>
+            <a [href]="item.event2.link" target="_blank">
+              <h1 translate>{{ item.event2.title }}</h1>
+            </a>
+          </ng-template>
+          <ng-template #noLink2>
+            <h1 #noLink translate>{{ item.event2.title }}</h1>
+          </ng-template>
           <span translate>{{ item.event2.message }}</span>
         </div>
       </div>

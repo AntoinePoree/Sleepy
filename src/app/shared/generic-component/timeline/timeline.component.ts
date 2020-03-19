@@ -3,6 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 interface IEvent {
   title: string;
   message: string;
+  link?: string;
 }
 
 export interface ITimelane {
@@ -24,7 +25,5 @@ export class TimelineComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    console.log(this.data);
-  }
+  ngOnInit() {}
 }

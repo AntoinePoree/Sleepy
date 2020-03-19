@@ -10,9 +10,10 @@ import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
 import { GameListComponent } from './game-list/game-list.component';
 import { SomeInfoComponent } from './some-info/some-info.component';
+import { CompleteInfoComponent } from './complete-info/complete-info.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, Angulartics2Module, HomeRoutingModule],
-  declarations: [HomeComponent, GameListComponent, SomeInfoComponent]
+  declarations: [HomeComponent, GameListComponent, SomeInfoComponent, CompleteInfoComponent]
 })
 export class HomeModule {}
