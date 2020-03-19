@@ -1,23 +1,8 @@
-dist: trusty
-sudo: false
-
 language: node_js
 node_js:
-  - '8'
-
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
-
-cache:
-  directories:
-    - ./node_modules
-
-install:
-  - yarn
-
+  - '9.8.0'
 script:
   - yarn test:ci
+before_install: yarn global add greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
