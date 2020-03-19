@@ -6,7 +6,6 @@ import { Angulartics2Module } from 'angulartics2';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
 import { HomeComponent } from './home.component';
-import { QuoteService } from './quote.service';
 import { GameListComponent } from './game-list/game-list.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { SomeInfoComponent } from './some-info/some-info.component';
@@ -25,8 +24,7 @@ describe('HomeComponent', () => {
         HttpClientTestingModule,
         TranslateModule.forRoot()
       ],
-      declarations: [HomeComponent, GameListComponent, SomeInfoComponent],
-      providers: [QuoteService]
+      declarations: [HomeComponent, GameListComponent, SomeInfoComponent]
     }).compileComponents();
   }));
 

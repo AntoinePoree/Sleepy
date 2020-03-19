@@ -15,7 +15,7 @@ export const environment = {
   hmr: true,
   version: env.npm_package_version + '-dev',
   serverUrl: '/api',
-  defaultLanguage: 'en-US',
+  defaultLanguage: 'fr-FR',
   supportedLanguages: ['en-US', 'fr-FR']
 };
 
