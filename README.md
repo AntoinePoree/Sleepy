@@ -1,3 +1,5 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/AntoinePoree/Sleepy/badge.svg?targetFile=package.json)](https://snyk.io/test/github/AntoinePoree/Sleepy?targetFile=package.json)
+
 # Sleepy
 
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
