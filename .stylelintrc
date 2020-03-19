@@ -15,7 +15,7 @@
     "selector-attribute-quotes": "always",
     "string-quotes": "double",
     "max-nesting-depth": 3,
-    "selector-max-compound-selectors": 3,
+    "selector-max-compound-selectors": 4,
     "selector-max-specificity": "0,3,2",
     "declaration-no-important": true,
     "at-rule-no-vendor-prefix": true,
