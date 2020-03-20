@@ -24,6 +24,7 @@ div {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  z-index: 1;
 
   time {
     position: absolute;
@@ -56,6 +57,7 @@ div {
 }
 
 ul {
+  padding: 0;
   li {
     list-style-type: none;
     position: relative;

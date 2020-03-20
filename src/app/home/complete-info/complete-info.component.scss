@@ -1,0 +1,149 @@
+@import "src/theme/theme-variables";
+
+.row {
+  margin: 0;
+}
+
+.back {
+  display: block;
+  background-color: $gray-100;
+  position: relative;
+  height: 90vh;
+}
+
+.phone {
+  display: none;
+  background-color: $gray-100;
+  position: relative;
+  height: 50vh;
+}
+
+img {
+  width: 7rem;
+  border-radius: 10%;
+}
+
+.img-phone {
+  font-size: 5rem;
+  padding-top: 10rem;
+  color: black;
+}
+
+.logo {
+  padding-top: 11rem;
+  border-radius: 0;
+}
+
+.i {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 5rem;
+  color: black;
+  background-color: $gray-100;
+}
+
+a:hover,
+a:visited:hover {
+  ::before {
+    color: $gray-500;
+  }
+}
+
+.linkedin {
+  color: $blue;
+}
+
+.center {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+  height: 15rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+  }
+
+  &:nth-of-type(odd) {
+    > div {
+      left: 1.5rem;
+    }
+  }
+
+  &:nth-of-type(even) {
+    > div {
+      left: -439px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .center {
+    div {
+      width: 250px;
+      flex-direction: column;
+
+      div {
+        width: 80%;
+        margin: 10px;
+      }
+    }
+
+    &:nth-of-type(even) {
+      > div {
+        left: -289px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .back {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+  }
+
+  body {
+    background: #8bfff4;
+  }
+
+  .i {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(0);
+    z-index: 2;
+    font-size: 5rem;
+    color: black;
+    background-color: $gray-100;
+  }
+
+  .center {
+    margin-left: 20px;
+
+    div {
+      width: calc(100vw - 91px);
+    }
+
+    &:nth-of-type(even) {
+      > div {
+        left: 1.5rem;
+      }
+    }
+  }
+}

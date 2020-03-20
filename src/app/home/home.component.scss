@@ -77,3 +77,15 @@ q {
   width: 100px;
   height: 100px;
 }
+
+.flex {
+  justify-content: center;
+  display: flex;
+}
+
+.img {
+  border-radius: 50%;
+  height: auto;
+  width: 9rem;
+  align-self: center;
+}

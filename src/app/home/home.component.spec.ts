@@ -9,6 +9,7 @@ import { HomeComponent } from './home.component';
 import { GameListComponent } from './game-list/game-list.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { SomeInfoComponent } from './some-info/some-info.component';
+import { CompleteInfoComponent } from './complete-info/complete-info.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -24,7 +25,7 @@ describe('HomeComponent', () => {
         HttpClientTestingModule,
         TranslateModule.forRoot()
       ],
-      declarations: [HomeComponent, GameListComponent, SomeInfoComponent]
+      declarations: [HomeComponent, GameListComponent, SomeInfoComponent, CompleteInfoComponent]
     }).compileComponents();
   }));
 

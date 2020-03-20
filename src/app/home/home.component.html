@@ -16,9 +16,17 @@
       <li>
         <app-timeline [data]="arrayTimeLine"></app-timeline>
       </li>
-      <!-- <li>
+      <li class="mb-5">
         <app-complete-info></app-complete-info>
-      </li> -->
+      </li>
+      <li class="flex">
+        <div class="card" [ngStyle]="{ width: '18rem' }">
+          <img class="img m-3" src="assets/ant.jpg" alt="Antonio" />
+          <div class="card-body">
+            <p class="card-text" translate>me</p>
+          </div>
+        </div>
+      </li>
     </ul>
   </section>
 </section>
