@@ -1,3 +1,5 @@
+@import "src/theme/theme-variables";
+
 .accueil {
   /* The image used */
   background-image: url("src/assets/acc.jpg");
@@ -94,7 +96,7 @@ q {
 }
 
 .li-card {
-  height: 45vh;
+  height: 30rem;
 }
 
 .content h2 {
@@ -108,12 +110,13 @@ q {
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
-  background: #111845a6;
+  background: $gray-100;
   box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 20px 50px rgb(23, 32, 90);
   border: 2px solid #2a3cad;
-  color: white;
+  color: black;
+  font-weight: bold;
   padding: 20px;
 }
 

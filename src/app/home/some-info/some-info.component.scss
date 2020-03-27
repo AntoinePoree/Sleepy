@@ -1,18 +1,28 @@
 @import "src/theme/theme-variables";
 
-.background {
-  width: 100%;
-  height: 100%;
-  background-color: $gray-100;
+@media screen and (max-width: 900px) {
+  section {
+    border-radius: 0 0 12% 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section {
+    border-radius: 25%;
+  }
 }
 
 section {
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 25%;
   border: 1px solid $gray-200;
   box-shadow: 0 -14px 20px 2px grey;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: $gray-100;
 }
 
 h1 {
