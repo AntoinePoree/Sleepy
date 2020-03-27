@@ -1,15 +1,25 @@
 @import "src/theme/theme-variables";
 
-section {
-  background-color: $gray-100;
+.background {
   width: 100%;
   height: 100%;
+  background-color: $gray-100;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 25%;
+  border: 1px solid $gray-200;
+  box-shadow: 0 -14px 20px 2px grey;
 }
 
 h1 {
   text-align: center;
   padding-top: 5rem;
   padding-right: 35%;
+  background-color: $gray-100;
   box-shadow: 0 -14px 20px 2px grey;
 }
 

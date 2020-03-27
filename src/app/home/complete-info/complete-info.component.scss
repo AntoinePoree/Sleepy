@@ -21,6 +21,11 @@
 img {
   width: 7rem;
   border-radius: 10%;
+  transition: 0.4s ease-in-out;
+}
+
+img:hover {
+  width: 15rem;
 }
 
 .img-phone {

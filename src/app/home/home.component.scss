@@ -90,6 +90,7 @@ q {
   height: auto;
   width: 9rem;
   align-self: center;
+  border: 1px solid gold;
 }
 
 .li-card {
@@ -241,12 +242,6 @@ q {
   outline: none;
 }
 
-.button a {
-  position: absolute;
-  color: #fff;
-  font-size: 17px;
-}
-
 @keyframes pulse {
   0% {
     transform: scale(1, 1);
@@ -261,13 +256,17 @@ q {
 }
 
 .appear {
-  animation: appear 0.8s linear forwards;
+  animation: appear 1.2s linear forwards;
 }
 
 @keyframes appear {
   0% {
     opacity: 0;
     height: 0;
+  }
+
+  50% {
+    background-color: #f8f9fa;
   }
 
   100% {

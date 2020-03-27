@@ -28,7 +28,8 @@
           </div>
         </div>
       </li>
-      <li>
+      <li *ngIf="!showGameList">
+        <p class="text-center"><b translate>more</b></p>
         <div class="container">
           <div class="bg"></div>
           <div class="button" (click)="toggleGameList()"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
@@ -36,6 +37,9 @@
       </li>
       <li class="appear" *ngIf="showGameList">
         <app-game-list></app-game-list>
+      </li>
+      <li *ngIf="showGameList">
+        <p class="text-center"><b translate>soon</b></p>
       </li>
     </ul>
   </section>
