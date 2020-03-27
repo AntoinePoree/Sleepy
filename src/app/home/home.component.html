@@ -7,25 +7,35 @@
 <section>
   <section>
     <ul class="list-unstyled">
-      <li class="mb-4">
+      <li class="mb-0">
         <app-some-info></app-some-info>
       </li>
-      <li>
-        <app-game-list></app-game-list>
-      </li>
-      <li>
+      <li class="li-btn">
         <app-timeline [data]="arrayTimeLine"></app-timeline>
       </li>
-      <li class="mb-5">
+      <li class="mb-4">
         <app-complete-info></app-complete-info>
       </li>
-      <li class="flex">
-        <div class="card" [ngStyle]="{ width: '18rem' }">
-          <img class="img m-3" src="assets/ant.jpg" alt="Antonio" />
-          <div class="card-body">
-            <p class="card-text" translate>me</p>
+      <li class="position-relative li-card">
+        <div class="box">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <img class="img m-3" src="assets/ant.jpg" alt="Antonio" />
+            <p translate>me</p>
           </div>
         </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="bg"></div>
+          <div class="button" (click)="toggleGameList()"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+        </div>
+      </li>
+      <li class="appear" *ngIf="showGameList">
+        <app-game-list></app-game-list>
       </li>
     </ul>
   </section>

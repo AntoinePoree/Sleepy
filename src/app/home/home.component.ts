@@ -11,9 +11,14 @@ import { timeLineParams } from './timeline.params';
 export class HomeComponent implements OnInit {
   public quote: string | undefined;
   public arrayTimeLine: Array<ITimelane> = [];
+  public showGameList = false;
   constructor() {}
 
   ngOnInit() {
     this.arrayTimeLine = timeLineParams;
+  }
+
+  public toggleGameList() {
+    this.showGameList = !this.showGameList;
   }
 }
