@@ -2,7 +2,7 @@
 
 // STYLING
 .timeline {
-  background-color: $gray-100;
+  background-color: $gray-200;
 }
 h1 {
   font-size: 20px;
@@ -75,12 +75,12 @@ ul {
       width: 20px;
       height: 20px;
       z-index: 2;
-      background: #eee;
+      background: #f5af19;
     }
 
     &:nth-of-type(odd) {
       > div {
-        left: 1.5rem;
+        left: 3rem;
       }
     }
 
@@ -129,7 +129,7 @@ ul {
 
       &:nth-of-type(even) {
         > div {
-          left: 1.5rem;
+          left: 3rem;
         }
       }
     }

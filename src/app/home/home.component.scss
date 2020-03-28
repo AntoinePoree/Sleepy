@@ -113,11 +113,12 @@ q {
   background: $gray-100;
   box-sizing: border-box;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  box-shadow: 0 0 3px 0;
   border: 2px solid #2a3cad;
   color: black;
   font-weight: bold;
   padding: 20px;
+  border-radius: 10%;
 }
 
 .box::before {
@@ -147,6 +148,7 @@ q {
   padding: 20px;
   text-align: center;
   box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
+  border-radius: 10%;
 }
 
 .box span {
