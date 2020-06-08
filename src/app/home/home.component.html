@@ -38,9 +38,15 @@
       <li class="appear" *ngIf="showGameList">
         <app-game-list></app-game-list>
       </li>
-      <!-- <li *ngIf="showGameList">
-        <p class="text-center"><b translate>soon</b></p>
-      </li> -->
+      <li *ngIf="showGameList" class="mt-5 mb-5">
+        <div class="container">
+          <div class="bg-red"></div>
+          <a class="button" href="assets\CV Antoine.pdf" target="_blank"
+            ><i class="fa fa-heart heart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <!-- <p class="text-center"><b translate>soon</b></p> -->
+      </li>
     </ul>
   </section>
 </section>

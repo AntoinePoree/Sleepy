@@ -214,6 +214,7 @@ q {
 }
 
 .bg,
+.bg-red,
 .button {
   position: absolute;
   width: 50px;
@@ -234,6 +235,19 @@ q {
   background: rgb(111, 111, 238);
 }
 
+.bg-red {
+  animation: pulse 1.2s ease infinite;
+  background: red;
+}
+
+.heart {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -251,9 +265,11 @@ q {
   0% {
     transform: scale(1, 1);
   }
+
   50% {
     opacity: 0.3;
   }
+
   100% {
     transform: scale(1.5);
     opacity: 0;
