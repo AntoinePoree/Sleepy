@@ -1,0 +1,22 @@
+<section class="container">
+  <!-- <h1 class="mb-3" translate="desGame">desGame</h1> -->
+
+  <!-- <h2 class="mb-4" translate="titlePaysage">titlePaysage <i class="fas fa-heart heart"></i></h2> -->
+  <ng-container *ngIf="paysages && paysages.length; then hasData; else noData"></ng-container>
+
+  <ng-template #hasData>
+    <div class="container">
+      <div class="row">
+        <div *ngFor="let item of paysages; index as i" class="mb-5">
+          <app-card-game [data]="item" [flip]="true"></app-card-game>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #noData>
+    <div class="alert alert-primary" role="alert">
+      <p class="text-muted">Informations non disponible</p>
+    </div>
+  </ng-template>
+</section>

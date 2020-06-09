@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 import { ITimelane } from '../shared/generic-component/timeline/timeline.component';
 import { timeLineParams } from './timeline.params';
+import { IGame } from '../shared/services/games.service';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ export class HomeComponent implements OnInit {
   public quote: string | undefined;
   public arrayTimeLine: Array<ITimelane> = [];
   public showGameList = false;
+
   constructor() {}
 
   ngOnInit() {

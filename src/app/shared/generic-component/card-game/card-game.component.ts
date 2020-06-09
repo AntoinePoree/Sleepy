@@ -15,6 +15,10 @@ export class CardGameComponent implements OnChanges {
   ngOnChanges() {
     if (this.flip) {
       const b = document.getElementsByClassName('flip-horizontal')[1];
+      if (document.getElementsByClassName('flip-horizontal')[3]) {
+        const c = document.getElementsByClassName('flip-horizontal')[3];
+        c.setAttribute('dir', 'rtl');
+      }
       if (b) {
         b.setAttribute('dir', 'rtl');
       }
