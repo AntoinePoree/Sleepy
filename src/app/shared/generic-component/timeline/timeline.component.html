@@ -13,7 +13,7 @@
           >
           <span *ngIf="item.year">&nbsp;</span>
         </time>
-        <div class="discovery" *ngIf="item.event1">
+        <div class="discovery" [ngClass]="{ active: item.active }" *ngIf="item.event1" (click)="toggleActive(item)">
           <ng-container *ngIf="item.event1.link; then link; else noLink"></ng-container>
           <ng-template #link>
             <a [href]="item.event1.link" target="_blank">
@@ -23,7 +23,11 @@
           <ng-template #noLink>
             <h1 #noLink translate>{{ item.event1.title }}</h1>
           </ng-template>
-          <p translate>{{ item.event1.message }}</p>
+          <p class="potent" translate>{{ item.event1.message }}</p>
+          <!-- <span *ngIf="(item.event1.message | translate).length > 45"> -->
+          <span *ngIf="!item.active"><i class="fas fa-chevron-down"></i></span>
+          <span *ngIf="item.active"><i class="fas fa-chevron-up"></i></span>
+          <!-- </span> -->
         </div>
         <div class="scientist" *ngIf="item.event2">
           <ng-container *ngIf="item.event1.link; then link2; else noLink2"></ng-container>

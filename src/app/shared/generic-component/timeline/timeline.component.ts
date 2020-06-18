@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 interface IEvent {
   title: string;
@@ -13,6 +14,7 @@ export interface ITimelane {
   durationFormat?: string;
   event1: IEvent;
   event2?: IEvent;
+  active: boolean;
 }
 
 @Component({
@@ -26,4 +28,8 @@ export class TimelineComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  public toggleActive(time: ITimelane) {
+    time.active = !time.active;
+  }
 }

@@ -9,7 +9,18 @@ import { ITimelane } from '../shared/generic-component/timeline/timeline.compone
 export const timeLineParams: Array<ITimelane> = [
   {
     year: 2020,
+    month: '5',
+    active: false,
+    event1: {
+      title: 'Confusius',
+      message: 'confu',
+      link: 'https://allinbyprimonial.com/'
+    }
+  },
+  {
+    year: 2020,
     month: '3',
+    active: false,
     event1: {
       title: 'webTitle',
       message: 'webMessage'
@@ -18,6 +29,7 @@ export const timeLineParams: Array<ITimelane> = [
   {
     year: 2019,
     month: '4',
+    active: false,
     event1: {
       title: 'Web-Atrio',
       message: 'intégraton',
@@ -27,6 +39,7 @@ export const timeLineParams: Array<ITimelane> = [
   {
     year: 2018,
     month: '8',
+    active: false,
     event1: {
       title: 'stage',
       message: 'flutilliant'
@@ -37,6 +50,7 @@ export const timeLineParams: Array<ITimelane> = [
     month: '2',
     duration: 6,
     durationFormat: 'month',
+    active: false,
     event1: {
       title: 'Wild Code School',
       message: 'WCS',
@@ -45,6 +59,7 @@ export const timeLineParams: Array<ITimelane> = [
   },
   {
     year: 2016,
+    active: false,
     event1: {
       title: 'laveur',
       message: 'lavdes'
@@ -56,6 +71,7 @@ export const timeLineParams: Array<ITimelane> = [
   },
   {
     year: 2015,
+    active: false,
     event1: {
       title: 'bac',
       message: 'bacdes'
